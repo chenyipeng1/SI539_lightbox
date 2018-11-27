@@ -1,0 +1,36 @@
+.grid{
+	position: relative;
+	width: 95%;
+	margin:0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+}
+
+.grid img{
+	width: 30vw;
+}
+
+.item {
+	position: absolute;
+	z-index: 1;
+  }
+  .item.muuri-item-dragging {
+	z-index: 3;
+  }
+  .item.muuri-item-releasing {
+	z-index: 2;
+  }
+  .item.muuri-item-hidden {
+	z-index: 0;
+  }
+  .item-content {
+	position: relative;
+	width: 95%;
+	height: 95%;
+  }
+
+
+
+
+  
